@@ -1,0 +1,282 @@
+html,body{
+    background-color: #121212;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 280px;
+    height: 280px;
+}
+
+.port{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0 -10px;
+}
+
+.port::after{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+#imagemport {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+#imagemport img {
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: auto;
+    transition: all .5s ease;
+    filter: blur(0px);
+    overflow: scroll;
+    border-radius: 5px;
+}
+
+#imagemport img:hover{
+
+    -webkit-transform: scale(1.1); /* scale */
+    transform: scale(1.1);
+
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+
+    opacity: 0.3;
+
+    filter: blur(2px);
+}
+
+#imagemport:hover #comentario{
+    visibility: visible;
+    opacity:1;
+}
+
+#comentario{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+    pointer-events : none;
+
+    border-radius: 5px;
+
+    transition: opacity .2s, visibility .2s;
+}
+
+#comentario p{
+    position: relative;
+    text-align: center;
+    color:orange;
+    text-shadow: 1px 1px 5px black;
+    overflow: hidden;
+}
+
+.index {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    padding: 80px 180px 80px 100px;
+    margin-left: 30%;
+    float: initial;
+}
+
+
+.index img{
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: auto;
+    transition: all .5s ease;
+    filter: blur(0px);
+    overflow: scroll;
+    border-radius: 50%;
+}
+
+.index img:hover{
+    -webkit-transform: scale(1.1); /* scale */
+    transform: scale(1.1);
+
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+.index h1{
+    position: absolute;
+    right: 37%;
+    top: 10%;
+    color: white;
+    font-style: normal;
+}
+
+.index h2{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-style: normal;
+    margin-top: 40px;
+}
+
+.index h3{
+    position: absolute;
+    right: 37%;
+    top: 16%;
+    color: #f27609;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.index p{
+    position: absolute;
+    right: 37%;
+    top: 17%;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    text-align: right;
+    padding-left: 50%;
+}
+
+.curri h1{
+    color: white;
+    font-style: normal;
+}
+
+.curri h2{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-style: normal;
+    margin-top: 40px;
+}
+
+.curri h3{
+    color: #f27609;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.curri p{
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    text-align: justify;
+}
+
+.curri li{
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.curri{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    padding: 80px 180px 80px 100px;
+}
+
+.nav a{
+    color:white;
+    text-decoration: none;
+}
+
+.nav ul{
+    margin-top: 0px;
+    list-style: none;
+    text-align: center;
+    height: 50px;
+}
+
+.nav li{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+}
+
+.nav li:hover{
+    background-color: #121212;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+}
+
+.nav{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    background-color: gray;
+    margin-right: 0px;
+}
+
+.nav a:link{
+    color: white;
+    height: 50px;
+    text-decoration: none;
+}
+
+.nav a:visited{
+    color: white;
+    height: 50px;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: white;
+    height: 50px;
+    text-decoration: none;
+
+    text-shadow: 0 0 0.250em currentColor;
+}
+
+.nav a:active{
+    color: white;
+    height: 50px;
+    text-decoration: none;
+}
+
+.invert { filter: invert(100%); }
+
+.socials a:hover{
+    color: gray;
+    width: 10px;
+    height: 10px;
+}
+
+.socials a:link{
+    color: white;
+    height: 50px;
+    width: 10px;
+    height: 10px;
+}
+
+.socials a:visited{
+    color: white;
+    width: 10px;
+    height: 10px;
+}
+
+.socials a:active{
+    color: white;
+    width: 10px;
+    height: 10px;
+}
